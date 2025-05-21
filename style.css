@@ -827,6 +827,264 @@ footer .follow i{
 }
 
 
+/* Cart Page Styles */
+
+.cart-header {
+    background-image: url("assets/img/banner/b1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 14px;
+}
+
+.cart-header h2,
+.cart-header p {
+    color: #fff;
+}
+
+/* Cart Table */
+#cart {
+    overflow-x: auto;
+}
+
+#cart table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+}
+
+#cart table tbody td {
+    font-size: 13px;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+#cart table tbody tr {
+    border-bottom: 1px solid #e2e9e1;
+}
+
+#cart table img {
+    width: 70px;
+    height: auto;
+    object-fit: cover;
+}
+
+#cart table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3) {
+    width: 250px;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width: 150px;
+}
+
+.remove-item i {
+    color: #ff6b6b;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Quantity Control */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+.quantity-control button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #e2e9e1;
+    background: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quantity-control input {
+    width: 40px;
+    padding: 0 5px;
+    height: 25px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #e2e9e1;
+    border-radius: 0;
+    margin: 0 5px;
+}
+
+/* Cart Add Section (Coupon & Subtotal) */
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+    padding-bottom: 15px;
+}
+
+#coupon input {
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button {
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+/* Empty Cart */
+#empty-cart {
+    text-align: center;
+    padding: 50px 20px;
+    display: none;
+}
+
+#empty-cart h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#empty-cart p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+#empty-cart button {
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+/* Cart Count Badge */
+#lg-bag {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #088178;
+    color: #fff;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 799px) {
+    #cart-add {
+        flex-direction: column;
+    }
+    
+    #coupon, #subtotal {
+        width: 100%;
+    }
+}
+
+@media (max-width: 477px) {
+    #cart table td:nth-child(1) {
+        width: 40px;
+    }
+    
+    #cart table td:nth-child(2) {
+        width: 80px;
+    }
+    
+    #cart table td:nth-child(3) {
+        width: 100px;
+    }
+    
+    #cart table td:nth-child(4),
+    #cart table td:nth-child(5),
+    #cart table td:nth-child(6) {
+        width: 70px;
+    }
+    
+    #coupon input {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    #coupon button {
+        width: 100%;
+    }
+}
+
+
 
 
 /* Media Query */
