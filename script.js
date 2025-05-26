@@ -297,3 +297,40 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update cart count display
     updateCartCount();
 });
+
+// Admin login functionality
+function checkAdminLogin() {
+    // In a real app, you would check credentials against a database
+    const adminUsername = "admin";
+    const adminPassword = "admin123";
+    
+    const username = prompt("Nhập tên đăng nhập admin:");
+    const password = prompt("Nhập mật khẩu:");
+    
+    if (username === adminUsername && password === adminPassword) {
+        window.location.href = "admin.html";
+    } else {
+        alert("Sai tên đăng nhập hoặc mật khẩu!");
+    }
+}
+
+// Add admin link to navbar (you'll need to add this to your HTML)
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if user is on admin page
+    if (window.location.pathname.includes('admin.html')) {
+        // Admin-specific scripts can go here
+    } else {
+        // Add admin link to navbar if not already present
+        const navbar = document.getElementById('navbar');
+        if (navbar) {
+            const adminLink = document.createElement('li');
+            adminLink.innerHTML = '<a href="#" id="admin-login"><i class="fas fa-lock"></i> Admin</a>';
+            navbar.insertBefore(adminLink, navbar.lastElementChild);
+            
+            document.getElementById('admin-login').addEventListener('click', function(e) {
+                e.preventDefault();
+                checkAdminLogin();
+            });
+        }
+    }
+});
