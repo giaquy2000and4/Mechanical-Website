@@ -1182,3 +1182,19 @@ footer .follow i {
         width: 100%;
     }
 }
+
+#sm-banner {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap; /* Cho responsive đẹp */
+}
+
+#sm-banner .banner-box {
+    flex: 1 1 300px;
+    min-width: 280px;
+    max-width: 48%;
+    box-sizing: border-box;
+}
+
+
