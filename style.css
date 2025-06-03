@@ -1355,6 +1355,105 @@ footer .follow i {
     min-width: 150px;
 }
 
+@media (max-width: 768px) {
+    #blog {
+        padding: 40px 20px 0 20px;
+    }
+
+    #blog .blog-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #blog .blog-img,
+    #blog .blog-details {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #blog .blog-box h1 {
+        position: static;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-links {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about-head {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #about-head img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-head div {
+        padding-left: 0;
+    }
+
+    #about-app video {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact-details {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #contact-details .details,
+    #contact-details .map {
+        width: 100%;
+    }
+
+    #form-details {
+        flex-direction: column;
+        padding: 40px 20px;
+        margin: 20px;
+    }
+
+    #form-details form {
+        width: 100%;
+    }
+
+    #form-details .people {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #form-details .people div {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 500px) {
+    #form-details {
+        padding: 20px 10px;
+    }
+
+    #form-details .people div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #form-details .people div img {
+        margin-bottom: 10px;
+    }
+}
+
+
 
 /* Mobile responsive: xếp dọc */
 /* @media (max-width: 600px) {
